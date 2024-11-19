@@ -1,0 +1,140 @@
+
+.facets-facet-browse-content{
+	@extend .container-fluid;
+	
+}
+
+.facets-facet-browse-facets{
+	@extend .row;
+	width: 100%;
+}
+@media (min-width: 1200px) {
+	.facets-facet-browse{
+
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+.facets-facet-browse-results{
+	width: 100%;
+}
+
+
+
+
+
+
+
+//options in flex
+@media (min-width : 992px) {
+	.bigContainerOfFacet {
+		background-color: white;
+		border-radius: 10px; /* Adjust as needed for rounder corners */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+		padding: 20px; /* Optional padding inside the card */
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 10px; /* Bottom margin */
+		margin-left: 10px; /* Left margin */
+	}
+	.bigContainerOfFacet > div {
+		background-color: #f8f8ff; /* Primary button color */
+		color: #595f8d; /* Text color */
+		padding: 10px 20px; /* Padding for button-like appearance */
+		margin: 10px; /* Space around each button */
+		border-radius: 5px; /* Rounded corners */
+		text-align: center; /* Center text */
+		cursor: pointer; /* Pointer cursor for button effect */
+		transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+	}
+	
+	/* Hover effect for button */
+	.bigContainerOfFacet > div:hover {
+		background-color: #c6c6ee; /* Darker shade on hover */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+	}
+	
+	
+	///Button css
+	.facets-faceted-navigation-item-category-optionlist-extra-button {
+		background-color: #6b6bff; /* Initial background color */
+		color: white; /* Initial text color */
+		padding: 10px 20px; /* Adjust padding */
+		cursor: pointer; /* Pointer cursor on hover */
+		position: relative; /* For pseudo-element positioning */
+		border: 2px solid transparent; /* Initially transparent border */
+	}
+	
+	/* On hover, change the background and text color */
+	.facets-faceted-navigation-item-category-optionlist-extra-button:hover {
+		background-color: white; /* Change background color */
+		color: #6b6bff; /* Change text color */
+		font-weight: bolder;
+		border: 2px solid transparent;
+	}
+	.facets-faceted-navigation-item-facet-optionlist,
+.facets-faceted-navigation-item-facet-optionlist-extra {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px; /* Increased gap between items */
+	margin-top: 10px;
+	margin-bottom: 10px;
+	align-content: stretch;
+}
+
+.facet-option {
+	flex: 1 1 calc(20% - 24px); /* Ensure 4 items per row with gap */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	background: transparent; /* Transparent background */
+	border: 2px solid #ffffff; /* Border color */
+	border-radius: 4px; /* Rounded corners */
+	padding: 10px;
+	cursor: pointer; /* Pointer on hover */
+	transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+	
+}
+.facet-option > a{
+	color: black;
+}
+.facet-option:hover {
+	background-color: #ffffff; /* Light background on hover */
+	border-color: #8c8ce2; /* Blue border on hover */
+	color: black;
+	font-weight: bold;
+}
+
+.facets-faceted-navigation-item-facet-option .facets-faceted-navigation-item-facet-option-circle {
+	display: none; /* Hide circle icon when button is used */
+}
+
+.facets-faceted-navigation-item-facet-optionlist-extra-wrapper {
+	text-align: center;
+	margin-top: 16px;
+}
+
+.facets-faceted-navigation-item-category-optionlist-extra-button {
+	display: inline-block;
+	background: transparent;
+	border: 2px solid #007BFF;
+	color: #007BFF;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.facets-faceted-navigation-item-category-optionlist-extra-button:hover {
+	background-color: #007BFF;
+	color: white;
+}
+	
+}
+ .facets-faceted-navigation-item-facet-group-expander-icon:before {
+    content: "";
+}

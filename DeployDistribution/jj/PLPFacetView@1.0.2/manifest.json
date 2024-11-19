@@ -1,0 +1,59 @@
+{
+    "name": "PLPFacetView",
+    "fantasyName": "PLP FacetView",
+    "vendor": "jj",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=24.1.2",
+        "SCS": ">=24.1.2"
+    },
+    "version": "1.0.2",
+    "description": "ZIZO PLP Facets Enhancer is an advanced extension designed to elevate the Product Listing Page (PLP) experience on your e-commerce site. It introduces an intuitive, collapsible facet filtering system that allows customers to efficiently filter products by Categories, Color, and Brands. With a seamless design integration, this extension organizes facets into a sleek horizontal bar at the top of the PLP, aligning with your site’s theme and visual style.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PLPFacetView/Templates/jj_plpfacetview_plpfacetview.tpl",
+                    "Modules/PLPFacetView/Templates/jj_plp_facetdisplay.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PLPFacetView/Sass/_plpfacetview-plpfacetview.scss"
+        },
+        "files": [
+            "Modules/PLPFacetView/Sass/_plpfacetview-plpfacetview.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PLPFacetView/JavaScript/jj.PLPFacetView.PLPFacetView.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PLPFacetView/JavaScript/jj.PLPFacetView.PLPFacetView.js",
+                    "Modules/PLPFacetView/JavaScript/PLPFacetView.View.js",
+                    "Modules/PLPFacetView/JavaScript/jj.PLPFacetView.PLPFacetView.Model.js"
+                ]
+            }
+        }
+    },
+    "suitescript2": {
+        "files": []
+    }
+}
